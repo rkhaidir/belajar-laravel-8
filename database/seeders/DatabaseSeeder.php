@@ -28,17 +28,18 @@ class DatabaseSeeder extends Seeder
             'name' => 'Web Desain',
             'slug' => 'web-desain'
         ]);
-        
+
         Category::create([
             'name' => 'Personal',
             'slug' => 'personal'
         ]);
-        
-        // User::create([
-        //     'name' => 'Rakhmat Khaidir',
-        //     'email' => 'rakhmatkhaidir@gmail.com',
-        //     'password' => bcrypt('12345')
-        // ]);
+
+        User::create([
+            'name' => 'Rakhmat Khaidir',
+            'username' => 'rakhmat',
+            'email' => 'rakhmatkhaidir@gmail.com',
+            'password' => bcrypt('12345')
+        ]);
 
         // User::create([
         //     'name' => 'Tony Stark',
